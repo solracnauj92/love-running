@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     border: none;
-
 }
 body {
     font-family: Lato, sans-serif;
@@ -14,16 +13,16 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color:#252525;
-
+    color: #252525;
 }
 
 #logo {
-    float:left;
+    float: left;
     font-size: 280%;
     margin-left: 30px;
 }
@@ -31,7 +30,8 @@ h1, h2 {
     font-size: 110%;
     letter-spacing: 4px;
 }
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 #menu li {
@@ -61,13 +61,14 @@ h1, h2 {
 
     position: relative;
 }
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: #fff;
 }
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center;
+    background: url("../images/hero-image.webp") no-repeat center center;
 
     /* animates zoom effect of loading page */
     animation-name: hero-zoom;
@@ -77,13 +78,11 @@ h1, h2 {
 
 /* creates the level of zoom for her image */
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
-
     }
     to {
         transform: scale(1.1);
-
     }
 }
 
@@ -92,20 +91,19 @@ h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    
+
     width: 300px;
     height: 200px;
 
     padding-top: 40px;
     padding-left: 10px;
-    
-    background-color: rgba(241, 109, 107, .7);
+
+    background-color: rgba(241, 109, 107, 0.7);
 
     bottom: 30px;
     right: 150px;
 
     position: absolute;
-
 }
 
 #club-ethos {
@@ -116,7 +114,6 @@ h1, h2 {
     padding-top: 30px;
     width: 33%;
     float: left;
-
 }
 
 #right-about {
@@ -134,16 +131,14 @@ hr {
     border-top: 1px solid#3a3a3a;
     width: 100%;
     margin: 5px 0;
-
 }
 
 .left-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
-    clear:both;
+    clear: both;
     margin-bottom: 50px;
-
 }
 .right-about-heading {
     width: 60%;
@@ -151,7 +146,6 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-
 }
 .right-about-heading h2 {
     text-align: right;
@@ -164,9 +158,6 @@ hr {
     text-align: center;
     margin: 20px 0;
     font-size: 280%;
-
-
-
 }
 #circle-container {
     width: 300px;
@@ -180,26 +171,25 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    background: url("../images/ethos-center-image.jpg") no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 /* event times */
 
 #times {
-    background-image: url('../images/dublin-city.webp');
+    background-image: url("../images/dublin-city.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     overflow: hidden;
-
 }
 
 #times div {
-    color:#fafafa;
-    background-color: rgba(0, 0, 0, .6);
-    width:20%;
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 20%;
     height: 300px;
     float: left;
     padding: 30px 0 0 10px;
@@ -209,14 +199,13 @@ hr {
 }
 
 #times h2 {
-    color: #fafafa; ;
+    color: #fafafa;
 }
 
 /* footer */
 
 footer {
     height: 150px;
-
 }
 
 .social-networks {
@@ -240,8 +229,6 @@ footer {
     line-height: 0;
     column-count: 4;
     column-gap: 0;
-
-
 }
 
 #photos > img {
@@ -255,7 +242,7 @@ footer {
     #club-ethos {
         width: 65%;
         height: 1200px;
-        margin: 0. auto;
+        margin: 0 auto;
     }
 
     #welcome {
@@ -263,7 +250,8 @@ footer {
         margin: 0;
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -284,15 +272,12 @@ footer {
     }
 
     hr {
-        display: none
+        display: none;
     }
-
-
 }
 
 /* For medion screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
-    
     #menu {
         clear: left;
         float: left;
@@ -311,19 +296,30 @@ footer {
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading {
+    .left-about-heading,
+    .right-about-heading {
         width: inherit;
     }
-    
-    .left-about-heading h2, .right-about-heading h2 {
+
+    .left-about-heading h2,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-    .left-about-heading p, .right-about-heading p {
+    .left-about-heading p,
+    .right-about-heading p {
         text-align: center;
         padding: 0 20px;
     }
 
+    #photos {
+        column-count: 3;
+    }
 }
-    
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
